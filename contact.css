@@ -1,0 +1,83 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	font-family: century Gothic;
+	background: url("image/image.jpg")no-repeat;
+	height:100vh;
+	background-size: cover;
+	background-position: center;
+}
+.contact-box
+{
+	width: 400px;
+	background-color: #fff;
+	box-shadow: 0 0 20px 0 #999;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	border-radius: 7px;
+}
+form
+{
+	margin: 35px;
+}
+.input-field
+{
+	width: 300px;
+	height: 40px;
+	margin-top:20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #777;
+	border-radius: 14px;
+	outline: none;
+}
+.textarea-field
+{
+	height:150px;
+	padding-top:10px; 
+	resize: vertical;
+}
+.btm{
+	border-radius: 20px;
+	color: rgb(66, 15, 209);
+	margin-top:16px;
+	padding: 8px;
+	background-color: rgb(214, 226, 236);
+	font-size: 12px;
+	border: none;
+	cursor: pointer; 
+}
+.btm:hover{
+	border-radius: 20px;
+	color: rgb(66, 15, 209);
+	margin-top:18px;
+	padding: 10px;
+	background-color: rgb(214, 226, 236);
+	font-size: 12px;
+	border: none;
+	cursor: pointer; 
+	transition: .3s ease backgroud-color;
+}
+.section{
+	height: 100vh;
+	width: 100%;
+	background-color: aliceblue;
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+}
+.status.success{
+	background-color: rgb(211, 250, 153);
+	animation: status 4s ease forwards;
+}
+.status.error{
+	background-color: rgb(250, 129, 92);
+	color: white;
+	animation: status 4s ease forwards;
+}
