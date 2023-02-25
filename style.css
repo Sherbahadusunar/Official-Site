@@ -31,7 +31,7 @@ ul li a {
 text-decoration: none;
 color:rgb(255, 251, 0);
 letter-spacing: 5px;
-padding: 10px 50px;
+padding: 1rem 3rem;
 border: 30px transparent #fff;
 transition: 0.15s ease;
 font-size: 25px;
