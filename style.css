@@ -104,3 +104,56 @@ ul li.active a{
         background-image:url(images/img4.jpg);
     }
 }
+/* Extra small devices (phones) */
+@media (max-width: 767px) {
+  /* Set the font size for the header */
+  header {
+    font-size: 16px;
+  }
+  
+  /* Reduce the padding for the main section */
+  main {
+    padding: 10px;
+  }
+  
+  /* Reduce the font size for the footer */
+  footer {
+    font-size: 14px;
+  }
+}
+
+/* Small devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Increase the font size for the header */
+  header {
+    font-size: 20px;
+  }
+  
+  /* Increase the padding for the main section */
+  main {
+    padding: 20px;
+  }
+  
+  /* Increase the font size for the footer */
+  footer {
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (desktops) */
+@media (min-width: 992px) {
+  /* Set the font size for the header */
+  header {
+    font-size: 24px;
+  }
+  
+  /* Set the padding for the main section */
+  main {
+    padding: 30px;
+  }
+  
+  /* Set the font size for the footer */
+  footer {
+    font-size: 18px;
+  }
+}
