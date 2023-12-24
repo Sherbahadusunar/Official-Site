@@ -17,8 +17,7 @@
         // Authenticate the user
        
           // Replace these values with your own authentication code
-          $valid_username = 'myusername';
-          $valid_password = 'mypassword';
+      
           if ($username == 'myusername' && $password == 'mypassword') {
             // Redirect the user to the home page or another protected page
             header('Location: index.html');
