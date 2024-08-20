@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <h1>Select A Question From The Table</h1>
+    <div class="profile-container">
+        <button id="btnNextUser">Next User</button>
+        <div class="active-user-section" id="activeUser">
+            <!-- Dynamic active user generation -->
+        </div>
+        <div class="profile">
+            <div class="profile-name" id="profileName">User 1</div>
+            <div class="profile-score" id="profileScore">Score: 0</div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="grid-container" id="gridContainer">
+            <!-- Dynamic grid generation -->
+        </div>
+        <div class="main-container">
+            <div class="timer" id="timer">Time: 60s</div>
+            <div class="timer-line-container">
+                <div class="timer-line" id="timerLine"></div> <!-- Green bar for visual countdown -->
+            </div>
+            <div class="question-container" id="question"><span>Select a question from the left</span></div>
+            <div class="button-container">
+                <button class="right-answer" id="btnRight">First Attempt</button>
+                <button class="show-answer" id="btnShow">Show Answer</button>
+                <button class="pass" id="btnPass">Pass</button>
+                <button class="score1" id="btnscore1">Pass Attempt</button>
+            </div>
+        </div>
+        <div class="ranking-section">
+            <h2>All Users</h2>
+            <ul class="user-list" id="rankingList">
+                <!-- User list will be dynamically updated -->
+            </ul>
+        </div>
+    </div>
+    <div id="popup">
+        <h1 id="popupMessage"></h1>
+        <button onclick="closePopup()" id="btnClose">Close</button>
+    </div>
+
+    <script src="index.js">
+        
+    </script>
+</body>
+</html>
