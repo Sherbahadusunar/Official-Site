@@ -1,0 +1,266 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f0f0f0;
+            
+            background-image: url("image/kbcc.jpg");
+        }
+        
+        h1{
+            text-align: left;
+            background-color: blue;
+            border-radius: 7px;
+            color:rgb(252, 252, 255);
+            margin-left: 4%;
+            padding: 0;
+            margin-bottom: 2px;
+            margin-right: 56%;
+            font-weight: bold;
+        }
+
+        .profile-container {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            margin-left: 50%;
+            margin-top: 50px;
+            padding-bottom: auto;
+            position: absolute;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+
+        }
+
+        .profile {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .profile-name {
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .profile-score {
+            margin-top: 10px;
+            font-size: 26px;
+            color: #4CAF50;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .active-user-section {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-left: 20px;
+           
+        }
+
+        .ranking-section {
+            margin-top: 20px;
+            text-align: left;
+            width: auto;
+            background-color: aliceblue;
+            margin-bottom: auto;
+            padding: auto;
+            margin-left: auto;
+        }
+
+        .ranking-section h2 {
+            margin-bottom: 10px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .user-list {
+            list-style: none;
+            padding: 0;
+            font-size: 16px;
+            margin-bottom: 50px;
+            margin-left: 10px;
+        }
+
+        .user-list li {
+            font-weight: bold;
+            color:blue;
+            line-height: auto;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(8, 50px);
+            grid-template-rows: repeat(10, 50px);
+            gap: 10px;
+            margin: 20px;
+        }
+
+        .grid-item {
+            background-color: #add8e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .grid-item.disabled {
+            background-color: #ee0505;
+            pointer-events: none;
+            color: #fff;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            margin: 20px;
+        }
+
+        .question-container {
+            background-color: #0404a1;
+            color: rgb(255, 255, 255);
+            border-color: gray;
+            border-width: 10rem;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+            margin-right: 20px;
+            border-width: 1rem;
+            border-radius: 15px;
+            font-weight: bolder;
+        }
+        
+
+        .timer {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: bolder;
+            color: white;
+            border-radius: 5px;
+        }
+        .timer-line-container {
+            width: 108%; 
+            height: 15px; 
+            background-color: #ffffff; 
+            position: relative; 
+            margin-right: 10px;
+            
+        }
+        
+        .timer-line {
+            height: 100%; 
+            background-color: green; 
+            width: 100%; 
+            position: absolute;
+            left: 0; 
+            transition: width 1s linear, background-color 1s linear; 
+        }
+              
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            width: 110%;
+            padding: 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .right-answer {
+            background-color: green;
+            color: white;
+        }
+
+        .show-answer {
+            background-color: blue;
+            color: white;
+        }
+
+        .pass {
+            background-color: orange;
+            color: white;
+        }
+        .score1{
+            background-color: green;
+            color: white;
+        }
+
+        /* Add this to your CSS file or inside a <style> tag in your HTML head */
+        .disabled-button {
+            background-color: #f8d7da; /* Light red background */
+            color: #721c24; /* Dark red text color */
+            border: 1px solid #f5c6cb; /* Border color to match the background */
+            cursor: not-allowed; /* Change cursor to indicate that the button is not clickable */
+        }
+
+        /* Add this to your CSS file or inside a <style> tag in your HTML head */
+button:disabled {
+    background-color:red; /* Light red background */
+    color: #721c24; /* Dark red text color */
+    cursor: not-allowed; /* Change cursor to indicate that the button is not clickable */
+    border: 1px solid #f5c6cb; /* Border color to match the background */
+}
+
+/* Optionally, you can also add a transition effect for a smooth change */
+button {
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+
+        #popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: blue;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 1000;
+        }
+
+        #popup h1 {
+            margin: 0;
+            font-size: 24px;
+            text-align: center;
+            color:white;
+            transition: transform 0.3s ease-in-out;
+        }
+        #popup button{
+            background-color: red;
+            color: white;
+
+        }
